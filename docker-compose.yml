@@ -1,0 +1,6 @@
+services:
+  one-time-secret:
+    image: mcp/time:latest
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
