@@ -1,7 +1,7 @@
 {
   "name": "One Time Secret",
   "source": "https://docs.onetimesecret.com",
-  "docker_image": "mcp/time:latest",
+  "docker_image": "onetimesecret/onetimesecret:latest",
   "version": "latest",
   "repository": "https://github.com/waskevin/tnas-app-one-time-secret",
   "architectures": [

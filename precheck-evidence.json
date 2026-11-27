@@ -1,0 +1,14 @@
+{
+  "number": 37,
+  "name": "One Time Secret",
+  "dual_arch": true,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "evidence": "http_screenshot",
+  "screenshot_path": "precheck-screenshots/one-time-secret/x86_64/reprecheck.png",
+  "precheck_status": "http_ok",
+  "runtime_note": "NAS x86_64 onetimesecret/onetimesecret:latest ran with a Redis 7 dependency, reached healthy status, and returned HTTP 200; Playwright captured the real One Time Secret landing page. Docker Hub latest exposes linux/amd64 and linux/arm64.",
+  "submission_status": "not_submitted"
+}

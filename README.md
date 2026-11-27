@@ -5,16 +5,19 @@
 ## 应用信息
 
 - 上游项目：https://docs.onetimesecret.com
-- Docker 镜像：`mcp/time:latest`
+- Docker 镜像：`onetimesecret/onetimesecret:latest`
 - 架构：linux/amd64、linux/arm64（已通过 Docker Hub 多架构标签核验）
 
 ## 运行示例
 
 ```bash
-docker run -d --name one-time-secret --restart unless-stopped -e TZ=Asia/Shanghai mcp/time:latest
+docker compose up -d
 ```
 
-请按上游文档配置持久化目录和端口；仓库不包含密码、令牌或私钥。
+编排包含 Redis 依赖，服务监听容器 3000 端口；部署前请将 `SECRET` 替换为本地随机值。仓库不包含密码、令牌或私钥。
+
+- x86_64 预检截图：`precheck-screenshots/one-time-secret/x86_64/reprecheck.png`
+- NAS x86_64 实测：HTTP 200，首页显示 “Keep sensitive info out of your email and chat logs.”
 
 ## 状态
 
